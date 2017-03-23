@@ -1,0 +1,172 @@
+body {
+  font-family: 'Open Sans';
+  background-color: white;
+  font-smooth: always;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans';
+  font-variant: small-caps;
+  color: #131669;
+  border-bottom: 1px solid #090B4F;
+}
+
+h1 > i, h2 > i, h3 > i, h4 > i, h5 > i, h6 > i {
+  color: #24267E;
+}
+
+a {
+  font-family: 'Open Sans';
+  color: #090B4F;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: 600;
+  border-bottom: 1px solid #090B4F;
+  padding: 0px 3px 0px 3px;
+  transition: all 0.5s ease-in;
+}
+
+a:hover {
+  border-radius: 3px;
+  background-color: #24267E;
+  color: white;
+  border-bottom: 1px transparent;
+}
+
+.content nav ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.content nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.content nav a {
+  border: 1px solid #ddd;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+li {
+  list-style-type: disc;
+  color: #24267E;
+  margin-bottom: 5px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #24267E;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar div {
+  color: white;
+  font-family: Montserrat;
+  font-variant:  small-caps;
+}
+
+.sidebar > div:first-of-type {
+  font-size: 1.6rem;
+}
+
+.sidebar > div:last-of-type {
+  font-size: 0.7rem;
+  font-variant: normal;
+  padding: 5px;
+  padding-bottom: 3vh;
+  text-align: center;
+  display: none;
+}
+
+.sidebar div a {
+  color: white;
+  border-bottom: 0px;
+  font-weight: 700;
+}
+
+.sidebar div a:hover {
+  background-color: #24267E;
+}
+
+.rotate {
+  background-color: #FFFF00;
+  transform: rotate(-90deg);
+}
+
+.rotate .inner {
+  position: absolute;
+  top: -15px;
+  left: -300%;
+}
+
+.sidebar div .postfix {
+  color: #7779D8;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 2vw;
+}
+
+.tab div {
+  width: 100%;
+  padding-right: 2vw;
+  display: block;
+}
+
+.tab div li {
+  color: #24267E;
+}
+
+.tab div img {
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+  padding-left: 40px;
+}
+
+tr td:first-of-type {
+  font-weight: bold;
+  font-variant: small-caps;
+  width: 50%;
+}
+
+.topRated tr td:first-of-type {
+  padding-left: 0;
+  width: 5%;
+  text-align: right;
+}
+
+.topRated {
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .tab {
+    display: table;
+  }
+
+  .tab div {
+    width: 30vw;
+    display: table-cell;
+  }
+
+  .sidebar > div:last-of-type {
+    display: block;
+  }
+}
+
